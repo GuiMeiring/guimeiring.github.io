@@ -1,0 +1,29 @@
+main {
+    padding: 25vh 7.81vw;
+}
+
+.welcome-message h1 span {
+    display: block; /* Para que cada parte fique em uma linha separada */
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-message h1 .menssage{
+    font-family: var(--font-montserrat);
+    color: var(--light-color);
+    font-size: 2.6em;
+
+}
+
+.welcome-message h1 .menssage-name{
+    font-family: var(--font-audiowide);
+    color: var(--light-base-color);
+    font-size: 4em;
+
+}
+.welcome-message h1 .menssage-profile{
+    font-family: var(--font-montserrat);
+    color: var(--light-color);
+    font-size: 3.3em;
+
+}
