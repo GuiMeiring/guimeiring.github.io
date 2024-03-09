@@ -3,7 +3,7 @@ body {
     font-size: 62.5%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 808px) {
     .header__navigation .header_section {
         display: none;
     }
@@ -16,7 +16,7 @@ body {
     padding: 0 7.81vw;
     background-color: var(--dark-color);
     font-weight: bold;
-    height: 8.75vh;
+    height: 6rem;
     transition: 0.3s;
     font-family: var(--font-dm-sans);
   }
