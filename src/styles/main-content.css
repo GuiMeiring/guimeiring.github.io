@@ -1,6 +1,18 @@
 main {
-    padding: 25vh 7.81vw;
+    padding: 12rem 7.81vw;
 }
+
+@media only screen and (max-width: 566px) {
+  .home_section {
+      text-align: center;
+  }
+}
+
+.home_section {
+  display: flex;
+  align-items: center;
+}
+
 
 .welcome-message h1 span {
     display: block; /* Para que cada parte fique em uma linha separada */
@@ -28,56 +40,46 @@ main {
 
 }
 
-.orbit {
-    position: relative;
-    width: 400px; /* Aumento do tamanho da órbita */
-    height: 400px; /* Aumento do tamanho da órbita */
-    border-radius: 50%;
-    border: 2px solid #ccc;
-    margin: 100px auto;
-    animation: orbit 8s linear infinite, spin 4s linear infinite;
-  }
+.links{
+  display: flex;
+  justify-content: space-between;
   
-  .center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 150px; /* Aumento do tamanho do centro */
-    height: 150px; /* Aumento do tamanho do centro */
-    background-color: #009688; /* Cor do centro */
-    border-radius: 50%;
-  }
-  
-  .satellite {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60px; /* Aumento do tamanho do satélite */
-    height: 60px; /* Aumento do tamanho do satélite */
-    background-color: #ff5722; /* Cor do satélite */
-    border-radius: 50%;
-    animation: orbit 4s linear infinite reverse, spin 2s linear infinite;
-  }
-  
-  @keyframes orbit {
-    from {
-      transform: rotate(0deg) translateY(-150px) rotate(0deg); /* Aumento da distância vertical */
-    }
-    to {
-      transform: rotate(360deg) translateY(-150px) rotate(-360deg); /* Aumento da distância vertical */
-    }
-  }
-  
-  @keyframes spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  
-  
+}
+
+.links img {
+    width: 2rem;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+
+}
+.links .button_linkedin{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-items: center;
+    background-color: #0A66C2;
+    color: var(--light-color);
+    font-size: 2em;
+    width: 9rem;
+    font-family: var(--font-dm-sans);
+    height: 4rem;
+    border-radius: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.links .button_github{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--dark-base-color);
+  border: 1px solid white;
+  color: var(--light-color);
+  font-size: 2em;
+  width: 9rem;
+  font-family: var(--font-dm-sans);
+  height: 4rem;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  cursor: pointer;
+}
