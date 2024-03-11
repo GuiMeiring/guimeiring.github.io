@@ -13,7 +13,6 @@ main {
   align-items: center;
 }
 
-
 .welcome-message h1 span {
     display: block; /* Para que cada parte fique em uma linha separada */
     font-weight: normal;
