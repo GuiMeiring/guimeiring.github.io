@@ -1,16 +1,29 @@
-main {
-    padding: 12rem 7.81vw;
+
+main{
+  padding: 14.4rem 7.81vw;
 }
 
-@media only screen and (max-width: 566px) {
+@media only screen and (max-width: 834px) {
   .home_section {
-      text-align: center;
+     text-align: center;
+  }
+  main {
+    padding: 9.6rem 7.81vw;
   }
 }
 
 .home_section {
   display: flex;
   align-items: center;
+  z-index: 1;
+}
+
+.triangle-background{
+  width: 40%;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  z-index: -1;
 }
 
 .welcome-message h1 span {
