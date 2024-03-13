@@ -1,24 +1,15 @@
-
-main{
-  padding: 14.4rem 7.81vw;
-}
-
-@media only screen and (max-width: 834px) {
+ @media only screen and (max-width: 566px) {
   .home_section {
      text-align: center;
   }
-  main {
-    padding: 9.6rem 7.81vw;
-  }
-}
+} 
 
 .home_section {
   display: flex;
   align-items: center;
-  z-index: 1;
 }
 
-.triangle-background{
+.home_section .triangle_background{
   width: 40%;
   position: absolute;
   top: 50px;
@@ -26,45 +17,50 @@ main{
   z-index: -1;
 }
 
-.welcome-message h1 span {
+.home_section .title_container {
+  margin: 18rem 7.81vw;
+  padding: 1.6rem 0;
+}
+.title_container .title span {
     display: block; /* Para que cada parte fique em uma linha separada */
     font-weight: normal;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
 }
 
-.welcome-message h1 .menssage{
+.title_container .title .title_menssage{
     font-family: var(--font-montserrat);
     color: var(--light-color);
     font-size: 2.6em;
 
 }
 
-.welcome-message h1 .menssage-name{
+.title_container .title .title_name{
     font-family: var(--font-audiowide);
     color: var(--light-base-color);
     font-size: 4em;
 
 }
-.welcome-message h1 .menssage-profile{
+.title_container .title .title_profile{
     font-family: var(--font-montserrat);
     color: var(--light-color);
     font-size: 3.3em;
 
 }
 
-.links{
+.title_container .links{
+  margin-top: 2.4rem;
   display: flex;
   justify-content: space-between;
   
 }
 
-.links img {
+.title_container .links img {
     width: 2rem;
     overflow-clip-margin: content-box;
     overflow: clip;
 
 }
-.links .button_linkedin{
+.title_container .links .button_linkedin{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -72,15 +68,15 @@ main{
     background-color: #0A66C2;
     color: var(--light-color);
     font-size: 2em;
-    width: 9rem;
+    width: 8rem;
     font-family: var(--font-dm-sans);
-    height: 4rem;
+    height: 3.6rem;
     border-radius: 0.8rem;
     text-decoration: none;
     cursor: pointer;
 }
 
-.links .button_github{
+.title_container .links .button_github{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -88,9 +84,9 @@ main{
   border: 1px solid white;
   color: var(--light-color);
   font-size: 2em;
-  width: 9rem;
+  width: 8rem;
   font-family: var(--font-dm-sans);
-  height: 4rem;
+  height: 3.6rem;
   border-radius: 0.8rem;
   text-decoration: none;
   cursor: pointer;
