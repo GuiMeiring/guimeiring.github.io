@@ -6,6 +6,16 @@
   }
 } 
 
+/*Section About*/
+@media only screen and (max-width: 886px) {
+  .about_section .about_backgroud {
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      flex-direction: column;
+  }
+}
+
 .home_section {
   display: flex;
   align-items: center;
@@ -94,8 +104,7 @@
 }
 .about_section .about_title{
   text-align: center;
-  margin: 0 7.81%;
-  margin-bottom: 5.0rem;
+  padding: 5% 15%;
 }
 
 .about_title h2 {
@@ -106,13 +115,39 @@
 }
 
 .about_section .about_backgroud{
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  min-height: 50rem;
-  background: var(--dark-color);
-  transform: skewY(-3deg);
+  display: flex;
+  justify-content: space-between;
+  padding: 6.5% 7.81vw;
+  min-height: 35vh;
+  background-color: rgba(56, 56, 56, 0.5);
   z-index: -1;
   pointer-events: none;
-  opacity: 0.48; 
 }
+
+.about_backgroud .about_illustration{
+  min-width: 30%;
+}
+
+.about_backgroud .about_illustration img {
+  border-left: 0.6rem solid var(--blue-color);
+    filter: opacity(75%);
+    transition: 0.4s;
+    width: 80%;
+
+}
+
+.about_backgroud .about_description{
+  padding: 3.5% 1.5%;
+  color:var(--light-color);
+  font-family: var(--font-dm-sans);
+}
+
+.about_backgroud .about_description h3{
+  font-size: 1.8em;
+  margin-bottom: 2rem;
+}
+.about_backgroud .about_description p{
+  font-size: 1.6em;
+  margin-bottom: 1.2rem;
+}
+
