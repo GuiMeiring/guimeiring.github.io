@@ -14,6 +14,9 @@
       justify-items: center;
       flex-direction: column;
   }
+  .about_backgroud .about_description{
+    text-align: center;
+  }
   .about_backgroud .about_illustration{
     text-align: center;
   }
