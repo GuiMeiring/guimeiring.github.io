@@ -37,7 +37,7 @@
 }
 
 .home_section .title_container {
-  margin: 24% 7.81vw;
+  margin: 22% 7.81vw;
 }
 .title_container .title span {
   display: block; /* Para que cada parte fique em uma linha separada */
@@ -175,7 +175,7 @@
   font-size: 1.6em;
   background: var(--dark-color);
   padding: 2rem;
-  width: 19rem;
+  width: 20rem;
   border-radius: 1rem;
 }
 
