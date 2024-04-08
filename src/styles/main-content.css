@@ -29,7 +29,7 @@
 }
 
 .home_section .triangle_background{
-  width: 36%;
+  width: 34%;
   position: absolute;
   top: 50px;
   right: 0px;
@@ -37,7 +37,7 @@
 }
 
 .home_section .title_container {
-  margin: 22% 7.81vw;
+  margin: 22% 7.81vw 7% 7.81vw;
 }
 .title_container .title span {
   display: block; /* Para que cada parte fique em uma linha separada */
@@ -104,10 +104,11 @@
 
 .about_section{
   display: block;
+  padding-top: 6.5%;
 }
 .about_section .about_title{
   text-align: center;
-  margin-bottom: 3rem;
+  margin:3rem 0;
 }
 
 .about_title h2 {
@@ -177,4 +178,21 @@
   padding: 2rem;
   border-radius: 1rem;
 }
+.skills_section{
+  display: block;
+  padding-top: 6.5%;
+}
+
+.skills_section .skills_title{
+  text-align: center;
+  margin:3rem 0;
+}
+
+.skills_title h2 {
+  color: var(--light-base-color);
+  font-family: var(--font-audiowide);
+  font-size: 3.3em;
+  font-weight: normal;
+}
+
 
