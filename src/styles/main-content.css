@@ -198,15 +198,20 @@
 
 .skills_section .skills_container{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
   grid-gap: 20px;
 
+}
+@media screen and (max-width: 886px) {
+  .skills_section .skills_container{
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+  
 }
 
 .skills_container .skills_grid{
   text-align: center;
 }
-
 
 .skills_container .skills_grid img{
   width: 11rem;
