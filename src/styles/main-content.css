@@ -37,7 +37,7 @@
 }
 
 .home_section .title_container {
-  margin: 22% 7.81vw 7% 7.81vw;
+  margin: 22% 7.81vw;
 }
 .title_container .title span {
   display: block; /* Para que cada parte fique em uma linha separada */
@@ -104,7 +104,7 @@
 
 .about_section{
   display: block;
-  padding-top: 6.5%;
+  padding-top: 9.26vh;
 }
 .about_section .about_title{
   text-align: center;
@@ -164,6 +164,7 @@
 .about_section .json_container{
   width: 100%;
   position: relative;
+  z-index: -1;
   bottom: 2rem;
   display: flex;
   justify-content: center;
@@ -180,7 +181,7 @@
 }
 .skills_section{
   display: block;
-  padding-top: 6.5%;
+  padding: 9.26vh 7.81vw;
 }
 
 .skills_section .skills_title{
@@ -193,6 +194,29 @@
   font-family: var(--font-audiowide);
   font-size: 3.3em;
   font-weight: normal;
+}
+
+.skills_section .skills_container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+
+}
+
+.skills_container .skills_grid{
+  text-align: center;
+}
+
+
+.skills_container .skills_grid img{
+  width: 11rem;
+  height: auto;
+}
+
+.skills_container .skills_grid p{
+  color: var(--light-color);
+  font-size: 2.6em;
+  font-family: var(--font-audiowide);
 }
 
 
