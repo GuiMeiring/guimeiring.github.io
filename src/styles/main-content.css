@@ -119,7 +119,7 @@
   z-index: -1;
 
 }
-@media only screen and (max-width: 886px) {
+@media only screen and (max-width: 1024px) {
   .about_section .about_backgroud {
       display: flex;
       align-items: center;
@@ -254,5 +254,4 @@
   font-size: 3.3em;
   font-weight: normal;
 }
-
 
