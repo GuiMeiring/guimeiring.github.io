@@ -20,7 +20,7 @@ header{
     align-items: center;
     padding: 1.8rem 7.81vw;
     background-color: var(--dark-color);
-    border: 0.1rem solid var(--light-base-color);
+    border-bottom: 0.1rem solid var(--light-base-color);
     font-weight: bold;
     transition: 0.3s;
     font-family: var(--font-dm-sans);
