@@ -283,7 +283,7 @@
 .project_container .project_illustration {
   flex:1;
   min-width: 30%;
-  max-height: 30rem;
+  min-height: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -313,7 +313,8 @@
 .project-content .project_description p {
   color: var(--light-color);
   font-family: var(--font-dm-sans);
-  font-size: 1.4em;
+  font-size: 1.6em;
+  line-height: 1.5;
   margin-bottom: 1.8rem;
 
 }
@@ -353,7 +354,7 @@
 
 .project-content .project_links .button_document {
   width: 10rem;
-  margin-right: 4.6rem;
+  margin-right: 3rem;
 }
 
 .project-content .project_links .button_code {
