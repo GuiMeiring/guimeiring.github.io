@@ -283,7 +283,8 @@
 .project_container .project_illustration {
   flex:1;
   min-width: 30%;
-  min-height: 20rem;
+  min-height: 12rem;
+  background: var(--dark-base-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,8 +336,9 @@
   width: 2rem;
 }
 
-.project-content .project_links .button_document,
-.project-content .project_links .button_code {
+.button_document,
+.project_links .button_code,
+.project_links .button_earth {
   display: flex;
   align-items: center;
   padding: 0.5rem;
@@ -359,6 +361,10 @@
 
 .project-content .project_links .button_code {
   width:8rem;
+  margin-right: 3rem;
+}
+.project-content .project_links .button_earth {
+  width: 8rem;
 }
 @media screen and (max-width: 768px) {
   .project_section .project_container {
@@ -374,10 +380,11 @@
   .project-content .project_links {
     display: block;
   }
-  .project-content .project_links .button_document {
-    width: 10rem;
+  .project-content .project_links .button_document,
+  .project-content .project_links .button_code {
     margin-bottom: 2.4rem;
   }
+
   .project_container .project_illustration {
     max-height: 18rem;
   }
