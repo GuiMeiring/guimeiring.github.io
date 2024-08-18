@@ -1,0 +1,23 @@
+/* DM Sans*/
+@font-face {
+    font-family: 'DM Sans';
+    src: url('DM_Sans/DMSans-VariableFont_opsz\,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Audiowide Regular */
+@font-face {
+    font-family: 'Audiowide';
+    src: url('Audiowide/Audiowide-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Montserrat Alternates Regular */
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('Montserrat_Alternates/MontserratAlternates-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
