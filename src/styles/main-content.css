@@ -2,7 +2,7 @@
 .home_section {
   display: flex;
   align-items: center;
-  padding: 15rem 7.81vw;
+  padding: 18rem 7.81vw;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -32,7 +32,6 @@
 
 .title_container .title span {
   display: block;
-  /* Para que cada parte fique em uma linha separada */
   font-weight: normal;
   margin-bottom: 1.2rem;
 }
@@ -119,7 +118,7 @@
   position: relative;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 7.81vw;
+  padding: 3.2rem 7.81vw;
   background-color: rgba(56, 56, 56, 0.5);
   pointer-events: none;
   transform: skewY(-3deg);
@@ -146,7 +145,6 @@
 
 .about_illustration {
   flex: 1;
-  /* Faz com que ocupe o espaço disponível */
   transform: skewY(3deg);
   min-width: 30%;
 }
@@ -160,6 +158,7 @@
 .about_backgroud .about_description {
   flex: 2;
   margin-left: 2rem;
+  margin-top: 2rem;
   color: var(--light-color);
   font-family: var(--font-dm-sans);
   transform: skewY(3deg);
@@ -180,7 +179,7 @@
   width: 100%;
   position: relative;
   z-index: -1;
-  bottom: 2rem;
+  bottom: 4rem;
   display: flex;
   justify-content: center;
 
@@ -197,6 +196,7 @@
 }
 
 /*Section Skills*/
+
 .skills_section {
   display: block;
   padding: 3rem 7.81vw;
@@ -218,7 +218,6 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(150px, 1fr));
   grid-gap: 10px;
-
 }
 
 .skills_container .skills_grid {
@@ -236,20 +235,20 @@
   font-family: var(--font-audiowide);
 }
 
-@media screen and (max-width: 886px) {
+@media screen and (max-width: 745px) {
   .skills_section .skills_container {
-    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    grid-template-columns: repeat(2, minmax(80px, 1fr));
 
   }
 
   .skills_container .skills_grid img {
-    width: 80px;
+    width: 150px;
     height: auto;
   }
 
   .skills_container .skills_grid p {
     color: var(--light-color);
-    font-size: 1em;
+    font-size: 2em;
   }
 
 }
@@ -296,8 +295,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Ajusta a imagem para preencher o contêiner sem distorção */
-
 }
 
 .project_container .project-content {
@@ -366,7 +363,7 @@
 .project-content .project_links .button_earth {
   width: 8rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1040px) {
   .project_section .project_container {
     display: flex;
     flex-direction: column;
@@ -390,7 +387,108 @@
   }
 
 }
-.disable{
+
+/*Experience Section*/
+
+.experience-section{
+  display: block;
+  padding: 3rem 7.81vw;
+}
+
+.experience-section .experience_title {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.experience_title h2 {
+  color: var(--light-base-color);
+  font-family: var(--font-audiowide);
+  font-size: 3.3em;
+  font-weight: normal;
+}
+
+.experience-section .experience-container{
+  background-color: var(--dark-color);
+  margin-top: 2.4rem;
+  border-radius: 0.8rem;
+  padding: 1.5rem;
+}
+.experience-container .experience-header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.experience-header .company-profile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  
+}
+
+.company-profile .company-logo{
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.company-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.role-details .role-title,
+.experience-duration .duration-text {
+  color:var(--light-base-color);
+  font-size: 1.8em;
+  font-family: var(--font-montserrat);
+}
+.experience-duration .duration-text{
+  text-align: right;
+}
+
+.role-title span,
+.duration-text span {
+  display: block;
+  margin-top: 0.2em;
+  font-size: 0.8em;
+  font-family: var(--font-montserrat);
+  font-weight: normal;
+}
+
+.experience-duration {
+  display: flex;
+  align-items: center;
+}
+
+.experience-description {
+  margin-top: 1.5rem;
+  font-size: 1.6em;
+  color: var(--light-color);
+  font-family: var(--font-dm-sans);
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 880px) {
+  .experience-container .experience-header, .experience-container .experience-header .company-profile {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+  }
+ .experience-duration .duration-text{
+    text-align: center;
+  }
+  .experience-container .experience-description{
+    text-align: center;
+  }
+}
+
+.disable {
   opacity: 0.4;
   cursor:not-allowed;
   pointer-events: none;

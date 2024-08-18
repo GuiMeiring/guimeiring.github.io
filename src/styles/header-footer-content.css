@@ -44,3 +44,21 @@ header{
     color: var(--light-base-color);
     font-size: 1.6em;
 }
+
+footer .footer_container{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    padding: 1.8rem 7.81vw;
+    background-color: var(--dark-color);
+    font-weight: bold;
+    transition: 0.3s;
+    color: var(--light-color);
+}
+
+.footer_container p{
+    font-size: 1.8em;
+    color: var(--light-base-color);
+}
